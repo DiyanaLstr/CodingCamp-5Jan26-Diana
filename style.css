@@ -1,0 +1,139 @@
+/* Reset Style Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style Utama Halaman */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Judul Aplikasi */
+h1 {
+    text-align: center;
+    color: #2196f3;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+/* Form Input */
+.todo-form {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.todo-form input {
+    padding: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.todo-form input:focus {
+    outline: 2px solid #2196f3;
+}
+
+#taskInput {
+    flex: 1;
+    min-width: 250px;
+}
+
+#dateInput {
+    min-width: 180px;
+}
+
+/* Tombol Umum */
+.btn {
+    padding: 0.9rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn {
+    background-color: #2196f3;
+    color: #121212;
+}
+
+.add-btn:hover {
+    background-color: #1976d2;
+}
+
+.filter-btn {
+    background-color: #ff9800;
+    color: #121212;
+}
+
+.filter-btn:hover {
+    background-color: #f57c00;
+}
+
+/* Tabel Todo */
+.todo-table {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-header, .table-body > div {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 0.8fr;
+    padding: 1.2rem;
+}
+
+.table-header {
+    background-color: #2d2d2d;
+    border-bottom: 1px solid #444444;
+    font-weight: 700;
+    color: #bbbbbb;
+}
+
+.table-body > div {
+    border-bottom: 1px solid #444444;
+    align-items: center;
+}
+
+.table-body > div:last-child {
+    border-bottom: none;
+}
+
+/* Tombol Hapus */
+.delete-btn {
+  background-color: #f44336;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #1cc7e6;
+}
+
+/* Pesan Kosong */
+.table-body p {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #bbbbbb;
+    padding: 3rem 0;
+}

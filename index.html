@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- Hubungkan file CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Form Input Todo & Date -->
+        <form id="todoForm" class="todo-form">
+            <input type="text" id="todoInput" placeholder="Add a new task..." required>
+            <input type="date" id="todoDate" required>
+            <button type="submit" class="btn add-btn">+</button>
+            <button type="button" id="filterBtn" class="btn filter-btn">Filter by Date</button>
+        </form>
+
+        <!-- Bagian Tampilan Daftar Todo -->
+        <div class="todo-table">
+            <div class="table-header">
+                <div>Task</div>
+                <div>Due Date</div>
+                <div>Actions</div>
+            </div>
+            <div id="todoList" class="table-body">
+                <p>No tasks found</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hubungkan file JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
